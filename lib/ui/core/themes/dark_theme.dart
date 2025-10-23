@@ -101,6 +101,9 @@ class AppDarkTheme {
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide.none,
         ),
+        errorStyle: TextStyle(
+          color: Color(0xFFDC3535),
+        ),
         hintStyle: GoogleFonts.poppins(
           color: const Color(0xFF52555A),
           fontSize: 14,
