@@ -38,6 +38,7 @@ dependencies:
   easy_localization: ^3.0.8
   google_fonts: ^6.3.0
   flutter_animate: ^4.5.2
+  another_flushbar: ^1.12.32
 
 dev_dependencies:
   flutter_test:
