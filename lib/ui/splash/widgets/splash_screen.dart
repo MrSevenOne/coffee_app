@@ -1,3 +1,4 @@
+import 'package:coffee_app/routing/app_router.dart';
 import 'package:coffee_app/utils/extensions/context_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
@@ -22,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen>
     // animatsiya tugaganda home pagega yo‘naltirish
     _controller.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
-        Navigator.pushReplacementNamed(context, '/home');
+        Navigator.pushReplacementNamed(context, AppRouter.login);
       }
     });
   }
@@ -36,7 +37,8 @@ class _SplashScreenState extends State<SplashScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: context.theme.scaffoldBackgroundColor, // orqa fon (xohlasang o‘zgartir)
+      backgroundColor: context
+          .theme.scaffoldBackgroundColor, // orqa fon (xohlasang o‘zgartir)
       body: Center(
         child: Lottie.asset(
           'assets/lottie/splash.json', // animatsiya joylashgan joy
